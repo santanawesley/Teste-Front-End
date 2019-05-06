@@ -1,0 +1,210 @@
+@import 'vars';
+@import 'reset';
+@import 'responsividade';
+@import 'mixin';
+
+
+/* GERAL - APP */
+
+.totalidade {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* CABEÇALHO - HEADER */
+
+.header {
+  background-color: $hover-color;
+
+  .header-content {
+
+    .cabecalho {
+      padding: 20px;
+
+      .logo {
+        display: block;
+        background-image: url(/img/logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 26px;
+        height: 26px;
+        float: left;
+      }
+
+      .titulo-geral {
+        text-align: center;
+        font-size: $size-titulo-medio;
+      }
+
+      .show-menu {
+      position: absolute;
+      top: 24px;
+      right: 20px;
+      cursor: pointer;
+      }
+    }
+    /* MENU - HEADER */
+    .tela-menu {
+      .button-close {
+        color: $color-white;
+        padding: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          background-color: $hover-color;
+        }
+      }
+
+      .lista-menu {
+        clear: both;
+      }
+
+      .menu-item {
+        color: $color-white;
+        display: block;
+        line-height: 2.3em;
+        text-align: right;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}
+
+/* BODY - CONTROLEFINAN --------*/
+.corpo {
+  margin: 15px;
+
+  /* TRANSAÇÃO - TRANSAÇÃO */
+  .transacao {
+    border-bottom: solid 1px $border-color;
+
+    .titulo-transacao {
+      padding: 10px;
+    }
+
+    .input-form {
+      margin: 8px 0 12px 0;
+    }
+
+    .add-transacao {
+      background-color: $color-gray-dark;
+      color: $color-white;
+      margin: 15px 0px;
+    }
+  }
+
+  /* EXTRATO DE TRANSAÇÕES  - EXTRATO */
+  .extrato {
+    .titulo-extrato {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .table-extrato {
+      width: 100%;
+
+      .th-second-extrato {
+        width: 65%;
+        text-align: left;
+      }
+
+      .th-third-extrato {
+        text-align: center;
+      }
+
+      .saldoFinal {
+        text-align: right;
+      }
+
+      .first-col-extrato {
+        width: 8%;
+      }
+
+      .second-col-extrato, .th-second-extrato {
+        width: 57%;
+      }
+
+      .third-col-extrato {
+        width: 15%;
+        text-align: right;
+      }
+
+      .last-col-extrato {
+        width: 5%;
+        text-align: right;  
+      }
+
+      .balanco-final {
+        font-size: 10px;
+        text-align: left;
+      }
+
+    }
+
+    .tipo-saldo {
+      text-align: right;
+      font-size: $font-tipo-saldo;
+      margin: -7px 25px 0px 0px;
+    }
+
+  }
+}
+
+/* PÁGINA DE RESUMO - RESUMO */
+.tela-resumo {
+  .titulo-resumo {
+    font-size: $size-titulo-maior;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .div-resumo {
+    margin: 0px auto 50px auto;
+    padding: 20px;
+    width: 90%;
+    border: solid 2px $border-color; 
+  
+    .table-resumo {
+      width: 100%;
+      
+      .tipos-resumo {
+        text-align: left;
+        width: 60%;
+      }
+  
+      .titulo-vl-resumo {
+        text-align: center;
+        width: 40%;
+      }
+  
+      .valores-resumo {
+        text-align: right;
+      }
+    }
+
+    .tipo-saldo-res {
+      text-align: right;
+      font-size: $font-tipo-saldo;
+      margin: -7px 25px 0px 0px;
+    }
+
+  }
+
+}
+
+/* PÁGINA EM CONSTRUÇÃO - CONFIGURAÇÃO */
+.configuracoes {
+  text-align: center;
+  padding: 50px;
+  h1 {
+    margin-bottom: 15px;
+  }
+}

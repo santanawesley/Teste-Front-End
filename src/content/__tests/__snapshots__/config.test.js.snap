@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`map() should return [] 1`] = `
+<div
+  className="configuracoes"
+>
+  <h1>
+     CONFIGURAÇÕES 
+  </h1>
+  <p>
+     PÁGINA EM CONSTRUÇÃO 
+  </p>
+</div>
+`;

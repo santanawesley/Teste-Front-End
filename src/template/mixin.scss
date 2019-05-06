@@ -1,0 +1,8 @@
+@import 'vars';
+
+@mixin teste() {
+  color: $color-white;
+  display: block;
+  line-height: 2.3em;
+  text-align: right;
+}

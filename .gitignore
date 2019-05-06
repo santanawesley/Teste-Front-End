@@ -1,0 +1,4 @@
+node_modules
+*.log
+arquivos_adm
+coverage/

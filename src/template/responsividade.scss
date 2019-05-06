@@ -1,0 +1,202 @@
+@media screen and (max-width: 598px) {
+
+  // --------- TRANSACAO ------------
+  .corpo {
+    .transacao {
+      .titulo-transacao { display: none }
+    }
+  }
+}
+
+.titulo-extrato {
+      font-size: $size-titulo-menor;
+}
+
+@media screen and (min-width: 599px) and (max-width: 958px) {
+
+  // --------- TRANSACAO ------------
+  .corpo {
+    .transacao {
+      border: solid 1px $border-color;
+      padding: 10px;
+      width: 100%;
+  
+      .titulo-transacao {
+        display: block;
+        text-align: center;
+        font-size: $size-titulo-medio;
+      }
+  
+      .nome {
+        width: 55%;
+        padding: 0 5px;
+      }
+  
+      .valor {
+        width: 20%;
+      }
+  
+      .tipo {
+        width: 25%;
+      }
+  
+      .field {
+        display: inline-block;
+      }
+  
+      input, select {
+        width: 100%;
+      }
+  
+      .div-add-transacao {
+        text-align: right;
+        .add-transacao {
+          width: 230px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  // --------- EXTRATO ------------
+  .corpo {
+    .extrato {
+      .titulo-extrato {
+        font-size: $size-titulo-medio;
+      }
+    }
+  }
+
+  // --------- RESUMO ------------
+  .totalidade {
+    .tela-resumo {
+      .div-resumo {
+        width: 60%;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 959px) {
+  // --------- HEADER ------------
+  .tela-menu {
+    background-color: $color-gray-dark;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 330px;
+    padding: 15px;
+    .lista-menu{
+      .menu-item:hover {
+          background-color: $hover-color; 
+        }
+    }
+  }
+
+  // --------- EXTRATO ------------
+  .extrato { 
+    padding: 30px 0 15px 0;
+  }  
+}
+
+@media screen and (min-width: 960px) {
+
+  // ------------ HEADER -------------
+  .screen {
+    .header {
+      .header-content {
+        .cabecalho {
+          display: inline-block;
+          .titulo-geral {
+            text-align: left;
+            margin: 3px 0 0 15px;
+            display: inline-block;
+          }
+        }
+
+        .show-menu, .button-close {
+          display: none;
+        }
+
+        .tela-menu {
+          display: inline-block;
+          float: right;
+          margin: 10px;
+
+          .lista-menu{
+            .menu-item {
+              background-color: $color-white;
+              color: $border-color;
+              font-weight: bold;
+              padding: 5px 20px;
+
+              &:hover {
+                background-color: $color-gray;
+                color: $color-white;
+              }
+            }
+
+            .itens-menu, .lista-menu {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+
+    // ------------ TRANSACAO -------------
+    .corpo {
+      .transacao {
+        display: inline;
+        float: left;
+        width: 38%;
+        border: solid 1px $border-color;
+        padding: 10px;
+  
+        .titulo-transacao {
+          font-size: $size-titulo-maior;
+          font-weight: bold;
+          padding: 7px;
+          text-align: center;
+        }
+  
+        .nome {
+          padding: 0;
+          margin: 0;
+        }
+  
+        .tipo, .nome, .valor {
+          display: block;
+          width: 100%;
+        }
+      }
+  
+      .add-transacao {
+        width: 100%;
+      }
+    }
+
+    // ------------ RESUMO -------------
+    .totalidade {
+      .tela-resumo {
+        .div-resumo {
+          width: 40%;
+        }  
+      }
+    }
+  
+    // ------------ EXTRATO -------------
+    .corpo {
+      .extrato {
+        display: inline;
+        float: right;
+        width: 60%;
+        .titulo-extrato {
+          font-size: $size-titulo-maior;
+        }
+      }
+    }
+  }
+}
