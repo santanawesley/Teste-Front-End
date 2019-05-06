@@ -1,5 +1,7 @@
 # Teste de Front-End
 Este teste busca avaliar quesitos técnicos para uma vaga de desenvolvimento front-end da Via Varejo.
+
+O resultado final pode ser conferido na url https://santanawesley.github.io/teste-front-end/
 ## O desafio
 Seu objetivo é criar uma SPA (Single Page Application) seguindo o layout fornecido nesta url [https://goo.gl/yMrCaf](https://goo.gl/yMrCaf).
 ## O que essa aplicação faz
@@ -30,6 +32,7 @@ Seu objetivo é criar uma SPA (Single Page Application) seguindo o layout fornec
 * Webpack;
 * Framework React;
 * Jest e Enzyme;
+* Git;
 
 ## Como Executar
 - Faça o clone ou download do respositorio: **git clone https://github.com/santanawesley/teste-via.git**
