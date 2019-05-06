@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nomedoprojeto/precache-manifest.0e2085e6b0699e681ae3360d880d367e.js"
+  "/teste-front-end/precache-manifest.ecafb53444fcc2120e6f6ba84d5e0ba9.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/nomedoprojeto/index.html", {
+workbox.routing.registerNavigationRoute("/teste-front-end/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
